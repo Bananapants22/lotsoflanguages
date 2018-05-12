@@ -1,0 +1,136 @@
+## Here is the pseudocode syntax:
+
+### Variables (and Constants):
+#### Assigning:
+To assign a variable, use `variable = value`
+
+All variables are to be in `camelCase` or `snake_case`
+
+Constants are to be in `ALL_CAPS_SNAKE_CASE`
+
+Variables are made global with the `global` keyword placed in front of them.
+
+#### Casting:
+To make a variable a string, use `variable = str(variable)`
+
+To make a variable an integer, use `variable = int(variable)`
+
+To make a variable a float, use `variable = float(variable)`
+
+### Input and Output:
+#### Input:
+To ask for input with a message, and store the input in a variable, use `variable = input(message)`
+
+#### Output:
+To output a message, use `print(message)`
+
+### Iteration:
+#### For Loops:
+To do something `n` times, use:
+```
+for i = 0 to n
+  do_something()
+next i
+```
+
+#### While Loops:
+To do something while a condition is not true, use:
+```
+while condition != true
+  do_something()
+endwhile
+```
+
+#### Do-Until
+To do something until a condition is true:
+```
+do
+  do_something()
+until condition == true
+```
+
+### Operators:
+#### Mathematical:
+To do addition, use `+`
+To do subtraction, use `-`
+To do multiplication, use `*`
+To do division, use `/`
+To do quotient, use `DIV`
+To do modulus, use `MOD` or `%`
+To do exponentiation, use `^`
+
+#### Comparisons:
+To do *equal to*, use `==`
+
+To do *not equal to*, use `!=` or `<>`
+
+To do *less than*, use `<`
+
+To do *less than or equal to*, use `<=`
+
+To do *greater than*, use `>`
+
+To do *greater than or equal to*, use `>=`
+
+#### Logical:
+To do *and*, use `AND`
+
+To do *or*, use `OR`
+
+To do *not*, use `NOT`
+
+### Selection:
+#### If/Else:
+To use `if` statements, use the following structure:
+```
+if conditionA then
+  do_something()
+elsif conditionB then
+  do_something_else()
+else
+  do_something_else_else()
+endif
+```
+
+#### Switch/Case:
+To use switch/case statements, use the following structure: ~~(Why would you want to though?)~~
+```
+switch condition:
+  case conditionA:
+    do_something()
+  case conditionB:
+    do_something_else()
+  default:
+    do_something_else_else()
+endswitch
+
+### String Handling:
+#### Length:
+To get the length of a string, use `string.length()`
+
+#### Substrings:
+To get a substring that starts at a specific postion 
+and that is a number of characters long, use `string.substring(start,length)`
+
+### Subroutines:
+#### Functions
+To define a function with arguments, start with `function name (argument)` and end with `endfunction`
+
+To return a value from a function, use `return value`
+
+#### Procedures
+To define a procedure with arguments, start with `procedure name (argument)` and end with `endprocedure`
+
+#### Calling
+To call a function or procedure on some data in the main program, use `name(data)`
+
+### Arrays
+To define an array of a specific length, use `array name[length]`
+To define a 2D array of arrays with their own length, use `array name[array_length,inside_arrays_length]`
+
+#### Comments
+Start all single-line comments with `//`
+Enclose all multi-line comments with `'''` at both ends
+
+If a simple function or procedure not mentioned here is to be used, such as `swap()` or `round()`, 
+just put a comment at the end of the line to describe what it should do.
