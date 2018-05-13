@@ -19,3 +19,8 @@ You can edit the file using:
 edit(filename).
 ```
 Remember to compile it using `make.` after editing!
+
+To stop prolog, use:
+```prolog
+halt.
+```
