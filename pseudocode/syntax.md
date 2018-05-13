@@ -52,11 +52,17 @@ until condition == true
 ### Operators:
 #### Mathematical:
 To do addition, use `+`
+
 To do subtraction, use `-`
+
 To do multiplication, use `*`
+
 To do division, use `/`
+
 To do quotient, use `DIV`
+
 To do modulus, use `MOD` or `%`
+
 To do exponentiation, use `^`
 
 #### Comparisons:
@@ -132,6 +138,7 @@ To define a 2D array called `name` of `x` arrays of length `y`, use `array name[
 
 #### Comments
 Start all single-line comments with `//`
+
 Enclose all multi-line comments with `'''` at both ends
 
 If a simple function or procedure not mentioned here is to be used, such as `swap()` or `round()`, 
