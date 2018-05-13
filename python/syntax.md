@@ -1,4 +1,4 @@
-## Here is the pseudocode syntax:
+## Here is **my** python syntax, matching all the pseudocode syntax file's points:
 
 ### Variables (and Constants):
 #### Assigning:
@@ -8,7 +8,16 @@ All variables are to be in `camelCase` or `snake_case`
 
 Constants are to be in `ALL_CAPS_SNAKE_CASE`
 
-Variables are made global with the `global` keyword placed in front of them.
+Variables are made global if they are declared at the start of the program. 
+
+To use global variables in a subroutine, use the `global` keyword, as in the example below:
+```python
+variable = value
+
+def function(argument):
+    global variable
+    return (argument * variable)
+```
 
 #### Casting:
 To make a variable a string, use `variable = str(variable)`
@@ -27,27 +36,20 @@ To output a message, use `print(message)`
 ### Iteration:
 #### For Loops:
 To do something `n` times, use:
-```
-for i = 0 to n
-  do_something()
-next i
+```python
+for i in range(0,n+1):
+    do_something()
 ```
 
 #### While Loops:
 To do something while a condition is not true, use:
-```
-while condition != true
-  do_something()
-endwhile
+```python
+while condition != True:
+    do_something()
 ```
 
 #### Do-Until
-To do something until a condition is true:
-```
-do
-  do_something()
-until condition == true
-```
+There is no do-until structure in python. Sorry!
 
 ### Operators:
 #### Mathematical:
@@ -59,16 +61,16 @@ To do multiplication, use `*`
 
 To do division, use `/`
 
-To do quotient, use `DIV`
+To do quotient, use `//`
 
-To do modulus, use `MOD` or `%`
+To do modulus, use `%`
 
-To do exponentiation, use `^`
+To do exponentiation, use `**`
 
 #### Comparisons:
 To do *equal to*, use `==`
 
-To do *not equal to*, use `!=` or `<>`
+To do *not equal to*, use `!=`
 
 To do *less than*, use `<`
 
@@ -79,70 +81,55 @@ To do *greater than*, use `>`
 To do *greater than or equal to*, use `>=`
 
 #### Logical:
-To do *and*, use `AND`
+To do *and*, use `and`
 
-To do *or*, use `OR`
+To do *or*, use `or`
 
-To do *not*, use `NOT`
+To do *not*, use `not`
 
 ### Selection:
 #### If/Else:
 To use `if` statements, use the following structure:
-```
-if conditionA then
-  do_something()
-elsif conditionB then
-  do_something_else()
-else
-  do_something_else_else()
-endif
+```python
+if conditionA:
+    do_something()
+elif conditionB:
+    do_something_else()
+else:
+    do_something_else_else()
 ```
 
 #### Switch/Case:
-To use switch/case statements, use the following structure: ~~(Why would you want to though?)~~
-```
-switch condition:
-  case conditionA:
-    do_something()
-  case conditionB:
-    do_something_else()
-  default:
-    do_something_else_else()
-endswitch
-```
+There is no switch/case structure in python. Sorry!
 
 ### String Handling:
 #### Length:
-To get the length of a string, use `string.length()`
+To get the length of a string, use `len(string)`
 
 #### Substrings:
 To get a substring that starts at a specific postion 
-and that is a number of characters long, use `string.substring(start,length)`
+and ends at a specific position, use `string[start:end]`
 
 ### Subroutines:
 #### Functions
-To define a function with arguments, start with `function name (argument)` and end with `endfunction`
+To define a function with arguments, start with `def name(argument):`
 
 To return a value from a function, use `return value`
 
 #### Procedures
-To define a procedure with arguments, start with `procedure name (argument)` and end with `endprocedure`
+To define a procedure with arguments, start with `def name(argument):`
 
 #### Calling
 To call a function or procedure on some data in the main program, use `name(data)`
 
 ### Arrays
-To define an array called `name` of length `x`, use `array name[x]`
+To define an array called `name`, use `name = []`
 
-To define a 2D array called `name` of `x` arrays of length `y`, use `array name[x,y]`
+To define a 2D array called `name`, use `name = []`
+
+To call from a 2D array, use `name[index_in_main_array][index_in_array_inside_main_array]`
 
 #### Comments
-Start all single-line comments with `//`
+Start all single-line comments with `#`
 
 Enclose all multi-line comments with `'''` at both ends
-
-If a simple function or procedure not mentioned here is to be used, such as `swap()` or `round()`, 
-just put a comment at the end of the line to describe what it should do, as in the example below:
-```
-a, b = swap(a, b) // Swaps the values of a and b
-```
