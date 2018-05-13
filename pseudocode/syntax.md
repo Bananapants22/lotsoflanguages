@@ -103,6 +103,7 @@ switch condition:
   default:
     do_something_else_else()
 endswitch
+```
 
 ### String Handling:
 #### Length:
@@ -125,12 +126,16 @@ To define a procedure with arguments, start with `procedure name (argument)` and
 To call a function or procedure on some data in the main program, use `name(data)`
 
 ### Arrays
-To define an array of a specific length, use `array name[length]`
-To define a 2D array of arrays with their own length, use `array name[array_length,inside_arrays_length]`
+To define an array called `name` of length `x`, use `array name[x]`
+
+To define a 2D array called `name` of `x` arrays of length `y`, use `array name[x,y]`
 
 #### Comments
 Start all single-line comments with `//`
 Enclose all multi-line comments with `'''` at both ends
 
 If a simple function or procedure not mentioned here is to be used, such as `swap()` or `round()`, 
-just put a comment at the end of the line to describe what it should do.
+just put a comment at the end of the line to describe what it should do, as in the example below:
+```
+a, b = swap(a, b) // Swaps the values of a and b
+```
